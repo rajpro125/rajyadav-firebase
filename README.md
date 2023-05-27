@@ -6,9 +6,11 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-1. Here I am using a Get_x Plugin to StateManagement.
-2. Firebase PushNotification.
-3. Here I have Cover All three Point Which You have mention in mail.
+Here I have Cover A All three point Which You have mention in mail.
+
+1. use get_x For State management.
+2. Use Firebase plugin.
+3. Added image to show looking ui good.
 
 A few resources to get you started if this is your first Flutter project:
 

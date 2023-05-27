@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "388351676223",
+    "project_id": "vivatech-ddea3",
+    "storage_bucket": "vivatech-ddea3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388351676223:android:de34591e3ef8d2f3b1cd8a",
+        "android_client_info": {
+          "package_name": "com.example.vivatech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxF7qkp9176QnLksHnHhU5X7Kqg_ldLK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
