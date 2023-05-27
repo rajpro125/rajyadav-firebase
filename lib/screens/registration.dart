@@ -52,7 +52,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         backgroundColor: const Color(0xff4e54c8),
       ),
       backgroundColor: const Color(0xff8a8ff7),
-      resizeToAvoidBottomInset: false,
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -81,7 +80,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   },
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 CustomTextFormField(
                   controller: password,
@@ -106,7 +105,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   },
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 CustomTextFormField(
                   controller: confirmPassword,
@@ -135,7 +134,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   },
                 ),
                 const SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width,

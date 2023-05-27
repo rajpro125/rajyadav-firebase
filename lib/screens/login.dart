@@ -31,7 +31,6 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     Get.put(SignupController());
     return Scaffold(
-        resizeToAvoidBottomInset: false,
         appBar: AppBar(
           title: const Text("Login"),
           backgroundColor: const Color(0xff4e54c8),
@@ -65,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: 8,
                     ),
                     CustomTextFormField(
                       controller: password,
@@ -90,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: 8,
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width,
@@ -114,13 +113,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                     const SizedBox(
-                      height: 50,
+                      height: 40,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Text(
-                          "Do't have an account yet?",
+                          "Don't have an account yet?",
                           style: TextStyle(color: Colors.white, fontSize: 16),
                         ),
                         CustomButton(
