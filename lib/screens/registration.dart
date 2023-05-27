@@ -52,6 +52,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         backgroundColor: const Color(0xff4e54c8),
       ),
       backgroundColor: const Color(0xff8a8ff7),
+      resizeToAvoidBottomInset: false,
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -70,7 +71,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   controller: email,
                   title: "Email",
                   hintText: "Email",
-                  requiredFileld: true,
+                  requiredField: true,
                   validator: (email) {
                     if (isEmailValid(email)) {
                       return null;
@@ -86,7 +87,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   controller: password,
                   title: "Password",
                   hintText: "Password",
-                  requiredFileld: true,
+                  requiredField: true,
                   obscureText: _passwordShowHide,
                   suffix: GestureDetector(
                       child: Icon(
@@ -111,7 +112,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   controller: confirmPassword,
                   title: "Confirm Password",
                   hintText: "Confirm Password",
-                  requiredFileld: true,
+                  requiredField: true,
                   obscureText: _confirmPasswordShowHide,
                   suffix: GestureDetector(
                       child: Icon(

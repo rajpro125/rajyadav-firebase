@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CustomTextFormField extends StatelessWidget {
   final String? title;
   final String? hintText;
-  final bool requiredFileld;
+  final bool requiredField;
   final FormFieldValidator? validator;
   final TextEditingController? controller;
   final Widget? suffix;
@@ -13,7 +13,7 @@ class CustomTextFormField extends StatelessWidget {
     super.key,
     this.title,
     this.hintText,
-    this.requiredFileld = false,
+    this.requiredField = false,
     this.controller,
     this.validator,
     this.suffix,
@@ -44,7 +44,7 @@ class CustomTextFormField extends StatelessWidget {
               ),
             ),
             Visibility(
-                visible: requiredFileld,
+                visible: requiredField,
                 child: const Text(
                   "*",
                   style: TextStyle(color: Colors.red),

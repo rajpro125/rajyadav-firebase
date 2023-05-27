@@ -41,12 +41,12 @@ class AuthRepository extends GetxController {
     } on FirebaseAuthException catch (e) {
       final ex = SignUpFailure.code(e.code);
       Get.snackbar('Signup', ex.message, snackPosition: SnackPosition.BOTTOM);
-      log('Firebase execption-${ex.message}');
+      log('Firebase exception-${ex.message}');
       throw ex;
     } catch (_) {
       const ex = SignUpFailure();
       Get.snackbar('Signup', ex.message, snackPosition: SnackPosition.BOTTOM);
-      log('Execption - ${ex.message}');
+      log('Exception - ${ex.message}');
       throw ex;
     }
   }
@@ -62,12 +62,12 @@ class AuthRepository extends GetxController {
     } on FirebaseAuthException catch (e) {
       final ex = SignUpFailure.code(e.code);
       Get.snackbar('SignIn', ex.message, snackPosition: SnackPosition.BOTTOM);
-      log('Firebase execption-${ex.message}');
+      log('Firebase exception-${ex.message}');
       throw ex;
     } catch (_) {
       const ex = SignUpFailure();
       Get.snackbar('SignIn', ex.message, snackPosition: SnackPosition.BOTTOM);
-      log('Execption - ${ex.message}');
+      log('Exception - ${ex.message}');
       throw ex;
     }
   }

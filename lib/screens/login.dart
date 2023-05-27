@@ -31,6 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     Get.put(SignupController());
     return Scaffold(
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(
           title: const Text("Login"),
           backgroundColor: const Color(0xff4e54c8),
@@ -53,7 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     CustomTextFormField(
                       controller: email,
                       title: "Email",
-                      requiredFileld: true,
+                      requiredField: true,
                       hintText: "Email",
                       validator: (email) {
                         if (isEmailValid(email)) {
@@ -69,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     CustomTextFormField(
                       controller: password,
                       title: "Password",
-                      requiredFileld: true,
+                      requiredField: true,
                       obscureText: _passwordShowHide,
                       hintText: "Password",
                       suffix: GestureDetector(
